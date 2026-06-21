@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reštaurácia Dvor Lehôtka – miesto, kde je práca láskou</title>
+    <meta name="description" content="Rodinná reštaurácia pri R1, Lehôtka pod Brehmi. Poctivá kuchyňa, talianska pec, catering, svadby, oslavy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styledvor.css">
+</head>
+<body>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galéria">
+        <button class="lb-close" id="lbClose" aria-label="Zatvoriť">✕</button>
+        <button class="lb-prev" id="lbPrev" aria-label="Predchádzajúci">‹</button>
+        <img src="" id="lbImg" alt="">
+        <button class="lb-next" id="lbNext" aria-label="Ďalší">›</button>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" role="navigation" aria-label="Hlavná navigácia">
+        <div class="nav-inner">
+            <a href="#uvod" class="nav-logo" aria-label="Dvor Lehôtka – domov">
+                <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/design/images/logo_dvorlehotka.svg"
+                     alt="Dvor Lehôtka"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="nav-logo-text" style="display:none">Dvor Lehôtka</span>
+            </a>
+            <button class="burger" id="burger" aria-label="Otvoriť menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#o-nas">O nás</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#galeria">Galéria</a></li>
+                <li><a href="#zazitky">Zážitky</a></li>
+                <li><a href="#kariera">Kariéra</a></li>
+                <li><a href="#kontakt" class="nav-cta">Rezervácia</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="uvod" aria-label="Úvodná sekcia">
+        <div class="hero-bg" id="heroBg">
+            <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/45.jpg"
+                 alt="Reštaurácia Dvor Lehôtka"
+                 class="hero-img"
+                 id="heroImg"
+                 onerror="this.style.opacity=0">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-eyebrow">Rodinná reštaurácia · Lehôtka pod Brehmi</span>
+            <h1 class="hero-title">Miesto, kde je<br><em>práca láskou</em></h1>
+            <p class="hero-sub">Poctivá kuchyňa z čerstvých surovín, talianska pec X‑OVEN,<br>vlastné pečivo a srdce, ktoré to cíti.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary">Pozrieť menu</a>
+                <a href="#kontakt" class="btn btn-outline">Rezervácia stola</a>
+            </div>
+        </div>
+        <div class="hero-bar"></div>
+        <div class="hero-scroll" aria-hidden="true">
+            <span>Prejdi nadol</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+        <div class="stats-row">
+            <div class="stat-item fade-up">
+                <span class="stat-number">2020</span>
+                <span class="stat-label">Rok otvorenia</span>
+            </div>
+            <div class="stat-item fade-up delay-1">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Miest v reštaurácii</span>
+            </div>
+            <div class="stat-item fade-up delay-2">
+                <span class="stat-number">X‑OVEN</span>
+                <span class="stat-label">Talianska pec</span>
+            </div>
+            <div class="stat-item fade-up delay-3">
+                <span class="stat-number">∞</span>
+                <span class="stat-label">Láska v každom jedle</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="o-nas">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text fade-up">
+                    <span class="eyebrow">O nás</span>
+                    <h2>Príbeh, ktorý sa<br>začal o osem rokov skôr</h2>
+                    <div class="divider-line left"></div>
+                    <br>
+                    <p>Naša rodinná reštaurácia sa nachádza pri rýchlostnej ceste R1, pri Žiari nad Hronom <strong>v obci Lehôtka pod Brehmi</strong>. Ctíme si tradície a s láskou budujeme miesto, ktoré jedného dňa s hrdosťou odovzdáme našim deťom.</p>
+                    <p>Prvých hostí sme privítali vo februári 2020, no príbeh sa začal písať oveľa skôr. Dnes sme veľká reštaurácia s <strong>priestrannými parkovacími miestami, terasou</strong> a súkromnými priestormi pre uzatvorenú spoločnosť.</p>
+                </div>
+                <div class="about-images fade-up delay-1">
+                    <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/1/14.jpg"
+                         alt="Prostredie reštaurácie Dvor Lehôtka"
+                         class="about-img-main"
+                         loading="lazy">
+                    <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/1/9.jpg"
+                         alt="Interiér reštaurácie"
+                         class="about-img-small"
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section section-dark" id="menu">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="eyebrow light">Jedálny lístok</span>
+                <h2>Poctivé špeciality<br>z <em>Dvora</em></h2>
+                <div class="divider-line"></div>
+                <p class="section-desc">Čerstvé suroviny, grilované pokrmy z talianskej pece a srdce, ktoré to cíti. Víkendová ponuka zahŕňa aj vlastné cestoviny.</p>
+            </div>
+            <div class="menu-download fade-up delay-1">
+                <div class="menu-card-big">
+                    <div class="menu-card-left">
+                        <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/download/small_menu_nahlad_2.jpg"
+                             alt="Náhľad jedálneho lístka"
+                             loading="lazy"
+                             onerror="this.parentElement.style.display='none'">
+                    </div>
+                    <div class="menu-card-right">
+                        <h3>Kompletné menu</h3>
+                        <p>Stiahnite si náš aktuálny jedálny lístok vo formáte PDF. Obsahuje polievky, hlavné jedlá, špeciality z X-OVEN pece aj dezerty.</p>
+                        <a href="https://www.dvorlehotka.sk/download.php?action=download&FileID=4"
+                           class="btn btn-primary" target="_blank" rel="noopener">⬇ Stiahnuť menu (PDF)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="highlights-grid fade-up delay-2">
+                <div class="highlight-card">
+                    <div class="hl-icon">🔥</div>
+                    <h4>Grilované špeciality</h4>
+                    <p>Pripravované celoročne v talianskej peci X-OVEN s vôňou dreveného uhlia.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="hl-icon">🥖</div>
+                    <h4>Vlastné pečivo</h4>
+                    <p>Každý deň čerstvo pečené, víkendy s domácimi cestovinami.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="hl-icon">🌱</div>
+                    <h4>Lokálne suroviny</h4>
+                    <p>Podporujeme regionálnych výrobcov. Len spoločne sme silnejší.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="hl-icon">🥂</div>
+                    <h4>Catering na kľúč</h4>
+                    <p>Svadby, oslavy, firemné večierky a plesy — doručíme špeciality priamo k vám.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section section-sand" id="galeria">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="eyebrow gold">Galéria</span>
+                <h2>Nahliadnite<br>do nášho <em>Dvora</em></h2>
+                <div class="divider-line"></div>
+            </div>
+            <div class="gallery-grid fade-up delay-1" id="galleryGrid">
+                <div class="gallery-item gallery-big" data-src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/45.jpg">
+                    <span class="gallery-zoom-icon">🔍</span>
+                    <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/45.jpg" alt="Dvor Lehôtka exteriér" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/46.jpg">
+                    <span class="gallery-zoom-icon">🔍</span>
+                    <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/46.jpg" alt="Reštaurácia" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/50.jpg">
+                    <span class="gallery-zoom-icon">🔍</span>
+                    <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/50.jpg" alt="Jedlo" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/56.jpg">
+                    <span class="gallery-zoom-icon">🔍</span>
+                    <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/56.jpg" alt="Interiér" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/60.jpg">
+                    <span class="gallery-zoom-icon">🔍</span>
+                    <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/60.jpg" alt="Terasa" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/65.jpg">
+                    <span class="gallery-zoom-icon">🔍</span>
+                    <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/photogallery/5/65.jpg" alt="Detail" loading="lazy">
+                </div>
+            </div>
+            <div class="gallery-more fade-up">
+                <a href="https://www.dvorlehotka.sk/gallery.php" class="btn btn-ghost" target="_blank" rel="noopener">Zobraziť celú galériu →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section class="section" id="zazitky">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="eyebrow">Zážitky & Prostredie</span>
+                <h2>Viac ako len<br><em>reštaurácia</em></h2>
+                <div class="divider-line"></div>
+            </div>
+            <div class="exp-grid">
+                <div class="exp-card fade-up">
+                    <span class="exp-visual">🐟</span>
+                    <h3>Jazierko s KOI kaprami</h3>
+                    <p>Nakŕmte nádherné KOI kapry — zážitok, ktorý potešia deti aj dospelých.</p>
+                </div>
+                <div class="exp-card fade-up delay-1">
+                    <span class="exp-visual">💛</span>
+                    <h3>Dvoranská lavička lásky</h3>
+                    <p>Zbierajte plusové body u svojej polovičky — romantické miesto na vyznanie lásky.</p>
+                </div>
+                <div class="exp-card fade-up delay-2">
+                    <span class="exp-visual">🦆</span>
+                    <h3>Dvoranský zverinec</h3>
+                    <p>Husi, ktoré vás možno zagágajú. Živá atmosféra dedinského dvora priamo pri reštaurácii.</p>
+                </div>
+                <div class="exp-card fade-up delay-3">
+                    <span class="exp-visual">🛍️</span>
+                    <h3>Regionálna predajňa</h3>
+                    <p>Odneste si domov lokálne výrobky od regionálnych výrobcov, ktorých podporujeme.</p>
+                </div>
+            </div>
+            <div class="video-wrap fade-up delay-2">
+                <h3>Ako nás nájdete?</h3>
+                <video controls muted playsinline class="nav-video" preload="none" aria-label="Navigácia do reštaurácie Dvor Lehôtka">
+                    <source src="https://www.dvorlehotka.sk/data-files/dvorlehotka/video/dvorlehotka-navigacia.mp4" type="video/mp4">
+                    Váš prehliadač nepodporuje video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAREER -->
+    <section class="section section-forest" id="kariera">
+        <div class="container">
+            <div class="career-wrap">
+                <div class="career-text fade-up">
+                    <span class="eyebrow light">Kariéra</span>
+                    <h2>Staňte sa súčasťou<br>nášho <em>tímu</em></h2>
+                    <p>Hľadáme ľudí, pre ktorých je práca skutočne láskou. Ak chcete rásť v príjemnom rodinnom prostredí, radi vás spoznáme.</p>
+                    <a href="mailto:dvorlehotka@gmail.com" class="btn btn-primary">Poslať životopis</a>
+                </div>
+                <div class="career-detail fade-up delay-1">
+                    <div class="career-box">
+                        <h4>Kontakt pre uchádzačov</h4>
+                        <p><a href="mailto:dvorlehotka@gmail.com">dvorlehotka@gmail.com</a></p>
+                        <p class="small">V predmete emailu uveďte pozíciu, o ktorú sa uchádzate.</p>
+                    </div>
+                    <div class="career-box">
+                        <h4>Pracovná doba</h4>
+                        <p>Flexibilné možnosti podľa dohody.<br>Rodinná atmosféra zaručená.</p>
+                    </div>
+                    <div class="career-box">
+                        <h4>Čo ponúkame</h4>
+                        <p>Príjemný kolektív, stabilné zázemie a každodenné varenie s láskou — nie len rutina.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="kontakt">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="eyebrow">Kontakt</span>
+                <h2>Nájdite nás<br>& <em>príďte na návštevu</em></h2>
+                <div class="divider-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-up">
+                    <div class="contact-block">
+                        <h4>📍 Adresa</h4>
+                        <p>Lehôtka pod Brehmi 308<br>966 01 Lehôtka pod Brehmi<br><em>(pri rýchlostnej ceste R1)</em></p>
+                    </div>
+                    <div class="contact-block">
+                        <h4>📞 Telefón</h4>
+                        <p><a href="tel:+421915948294">+421 915 948 294</a></p>
+                    </div>
+                    <div class="contact-block">
+                        <h4>✉️ Email</h4>
+                        <p><a href="mailto:dvorlehotka@gmail.com">dvorlehotka@gmail.com</a></p>
+                    </div>
+                    <div class="contact-block">
+                        <h4>📱 Sociálne siete</h4>
+                        <p>
+                            <a href="https://www.facebook.com/dvorlehotka" target="_blank" rel="noopener" class="social-link">Facebook</a>
+                            &nbsp;·&nbsp;
+                            <a href="https://www.instagram.com/dvor_lehotka/" target="_blank" rel="noopener" class="social-link">Instagram</a>
+                        </p>
+                    </div>
+                    <div class="contact-block">
+                        <h4>🕐 Otváracie hodiny</h4>
+                        <table class="hours-tbl">
+                            <tbody>
+                                <tr><td>Po – Pia</td><td>11:00 – 21:00</td></tr>
+                                <tr><td>Sobota</td><td>11:00 – 22:00</td></tr>
+                                <tr><td>Nedeľa</td><td>11:00 – 21:00</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="small">* Hodiny sa môžu meniť. Odporúčame zavolať pred návštevou.</p>
+                    </div>
+                </div>
+                <div class="contact-map fade-up delay-1">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.5!2d18.8157!3d48.5475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDMyJzUxLjIiTiAxOMKwNDgnNTYuOCJF!5e0!3m2!1ssk!2ssk!4v1700000000000!5m2!1ssk!2ssk"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa - Dvor Lehôtka">
+                    </iframe>
+                    <div class="map-cta">
+                        <a href="https://maps.google.com/?q=Lehôtka+pod+Brehmi+308,+966+01" target="_blank" rel="noopener" class="btn btn-brown">Otvoriť v Google Maps →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNERS -->
+    <section class="section-partners">
+        <div class="container">
+            <div class="section-header fade-up" style="margin-bottom:44px;">
+                <span class="eyebrow light">Partneri</span>
+                <h2 style="color:var(--cream);">Spolupracujeme<br>s <em>najlepšími</em></h2>
+            </div>
+            <div class="partners-row fade-up delay-1">
+                <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/image/alnet_logo_pdf_nongrad_2.png" alt="Alnet" class="partner-logo" loading="lazy">
+                <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/image/stp_logo_rgb_white_bckgnd.png" alt="STP" class="partner-logo" loading="lazy">
+                <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/image/az_logotyp.png" alt="AZ" class="partner-logo" loading="lazy">
+                <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/image/zveropark.png" alt="Zveropark" class="partner-logo" loading="lazy">
+                <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/image/logo_skalkaskiresort.png" alt="Skalka Ski Resort" class="partner-logo" loading="lazy">
+                <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/image/kofola-logo-basic-cmyk-orig-male.png" alt="Kofola" class="partner-logo" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="https://www.dvorlehotka.sk/data-files/dvorlehotka/design/images/logo_dvorlehotka_bw.svg"
+                     alt="Dvor Lehôtka logo"
+                     class="footer-logo"
+                     onerror="this.style.display='none'">
+                <p>Rodinná reštaurácia s dušou.<br>Lehôtka pod Brehmi, pri R1.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/dvorlehotka" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://www.instagram.com/dvor_lehotka/" target="_blank" rel="noopener">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <h5>Navigácia</h5>
+                <ul>
+                    <li><a href="#o-nas">O nás</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#galeria">Galéria</a></li>
+                    <li><a href="#zazitky">Zážitky</a></li>
+                    <li><a href="#kariera">Kariéra</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h5>Kontakt</h5>
+                <p><a href="mailto:dvorlehotka@gmail.com">dvorlehotka@gmail.com</a></p>
+                <p><a href="tel:+421915948294">+421 915 948 294</a></p>
+                <p>Lehôtka pod Brehmi 308<br>966 01 Lehôtka pod Brehmi</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Arrabella s.r.o., mayabella s.r.o. · Všetky práva vyhradené.</p>
+        </div>
+    </footer>
+
+    <script>
+    'use strict';
+
+    /* 1. NAVBAR */
+    (function initNavbar() {
+        const navbar   = document.getElementById('navbar');
+        const burger   = document.getElementById('burger');
+        const navLinks = document.getElementById('navLinks');
+        const allLinks = navLinks.querySelectorAll('a');
+
+        function onScroll() {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        burger.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            burger.classList.toggle('open', open);
+            burger.setAttribute('aria-expanded', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        });
+
+        allLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                burger.classList.remove('open');
+                burger.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (navLinks.classList.contains('open') &&
+                !navLinks.contains(e.target) && !burger.contains(e.target)) {
+                navLinks.classList.remove('open');
+                burger.classList.remove('open');
+                burger.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+        });
+
+        const sections = document.querySelectorAll('section[id]');
+        const navMap = {};
+        allLinks.forEach(a => {
+            const hash = a.getAttribute('href');
+            if (hash && hash.startsWith('#')) navMap[hash.slice(1)] = a;
+        });
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    Object.values(navMap).forEach(a => a.classList.remove('active'));
+                    const a = navMap[entry.target.id];
+                    if (a) a.classList.add('active');
+                }
+            });
+        }, { threshold: 0.35 });
+        sections.forEach(s => sectionObserver.observe(s));
+    })();
+
+    /* 2. PARALLAX HERO */
+    (function initParallax() {
+        const heroImg = document.getElementById('heroImg');
+        if (!heroImg) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    heroImg.style.transform = `translateY(${window.scrollY * 0.38}px)`;
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+    })();
+
+    /* 3. FADE-UP ANIMATIONS */
+    (function initFadeUp() {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.querySelectorAll('.fade-up').forEach(el => el.classList.add('visible'));
+            return;
+        }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    })();
+
+    /* 4. LIGHTBOX */
+    (function initLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        const lbImg    = document.getElementById('lbImg');
+        const lbClose  = document.getElementById('lbClose');
+        const lbPrev   = document.getElementById('lbPrev');
+        const lbNext   = document.getElementById('lbNext');
+        const items    = Array.from(document.querySelectorAll('.gallery-item[data-src]'));
+        let current    = 0;
+
+        lbImg.style.transition = 'opacity 0.18s ease';
+
+        function open(i) {
+            current = i;
+            lbImg.src = items[i].dataset.src;
+            lbImg.alt = items[i].querySelector('img')?.alt || '';
+            lightbox.classList.add('open');
+            document.body.style.overflow = 'hidden';
+            lbClose.focus();
+        }
+        function close() {
+            lightbox.classList.remove('open');
+            document.body.style.overflow = '';
+            lbImg.src = '';
+        }
+        function go(dir) {
+            current = (current + dir + items.length) % items.length;
+            lbImg.style.opacity = '0';
+            setTimeout(() => { lbImg.src = items[current].dataset.src; lbImg.style.opacity = '1'; }, 150);
+        }
+
+        items.forEach((item, i) => {
+            item.addEventListener('click', () => open(i));
+            item.setAttribute('role', 'button');
+            item.setAttribute('tabindex', '0');
+            item.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') open(i); });
+        });
+        lbClose.addEventListener('click', close);
+        lbPrev.addEventListener('click', () => go(-1));
+        lbNext.addEventListener('click', () => go(1));
+        lightbox.addEventListener('click', e => { if (e.target === lightbox) close(); });
+        document.addEventListener('keydown', e => {
+            if (!lightbox.classList.contains('open')) return;
+            if (e.key === 'Escape')     close();
+            if (e.key === 'ArrowLeft')  go(-1);
+            if (e.key === 'ArrowRight') go(1);
+        });
+        let tx = 0;
+        lightbox.addEventListener('touchstart', e => { tx = e.changedTouches[0].screenX; }, { passive: true });
+        lightbox.addEventListener('touchend',   e => {
+            const dx = e.changedTouches[0].screenX - tx;
+            if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+        }, { passive: true });
+    })();
+
+    /* 5. SMOOTH SCROLL */
+    (function initSmoothScroll() {
+        const OFFSET = 76;
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                const target = document.querySelector(href);
+                if (!target) return;
+                e.preventDefault();
+                window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - OFFSET, behavior: 'smooth' });
+            });
+        });
+    })();
+
+    /* 6. COUNTER ANIMATION */
+    (function initCounters() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const el      = entry.target;
+                const raw     = el.textContent.trim();
+                const numeric = parseInt(raw.replace(/\D/g, ''), 10);
+                if (isNaN(numeric)) return;
+                const suffix  = raw.replace(/\d/g, '');
+                const start   = performance.now();
+                const dur     = 1600;
+                function update(now) {
+                    const p = Math.min((now - start) / dur, 1);
+                    const e = 1 - Math.pow(1 - p, 3);
+                    el.textContent = Math.round(e * numeric) + suffix;
+                    if (p < 1) requestAnimationFrame(update);
+                }
+                requestAnimationFrame(update);
+                observer.unobserve(el);
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.stat-number').forEach(el => observer.observe(el));
+    })();
+
+    /* 7. PAGE LOAD FADE */
+    (function initPageLoad() {
+        document.body.style.opacity = '0';
+        document.body.style.transition = 'opacity 0.5s ease';
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => requestAnimationFrame(() => { document.body.style.opacity = '1'; }));
+        } else {
+            requestAnimationFrame(() => { document.body.style.opacity = '1'; });
+        }
+    })();
+    </script>
+</body>
+</html>
